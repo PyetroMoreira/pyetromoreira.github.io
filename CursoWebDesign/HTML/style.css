@@ -10,11 +10,7 @@ header {
     background-color: #4CAF50;
     padding-top: 30px;
     padding-bottom: 30px;
-}
-
-/* Navegação */
-nav {
-    background-color: #333;
+    margin-top: 10px;
 }
 
 /* Elemento principal */
@@ -36,6 +32,9 @@ footer {
 li {
     display: inline-table;
     width: 250px;
+    list-style: none;
+    padding: 5px;
+
 }
 
 /* Títulos H1 */
@@ -47,7 +46,7 @@ h1 {
 
 /* Títulos H1 */
 h2 {
-    text-align: left;
+    text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     color: #22222a;
 }
@@ -64,10 +63,70 @@ p {
     line-height: 1.6;
 }
 
-/* Menu */
-menu {
-   display: flex;
-   gap: 30px;
-   color: #333;
+
+/* 1. Estiliza o link "Skip to Main Content" */
+.skip-link {
+    position: top;
+    top: auto
+    left: 10px;
+    background: #000;
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: top 0.3s ease-in-out;
+}
+
+.skip-link:focus {
+    top: 10px;
+    outline: 3px solid yellow;
+
+}
+
+/* 3. Estiliza a navegação */
+
+nav {
+    background-color: #e8e8e8;
+    display: inline-flexbox;
+    justify-content: center;
+    width: 100%;
+
+}
+
+/* 4. Seleciona somente a imagem dentro da navegação */
+nav img {
+    width: 30%;
+    position: relative;
+    margin-right: 100px;
+    top: 20px;
+}
+
+/* 5. Estiliza a classe grid para uma grade de duas colunas */
+.grid {
+    display: grid;
+    grid-template-columns: 33% 33% 33% ;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+}
+
+/* 6. Estiliza somente as imagens dentro da classe grid */
+.grid img {
+    width: 100%;
+}
+
+/* 7. Ajustes finais na classe grid para melhor organização */
+.grid {
+    justify-content: space-between;
+    align-items: start;
+    row-gap: 30px;
+}
+
+/* 8. Estiliza a classe flex */
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
