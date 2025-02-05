@@ -1,0 +1,30 @@
+/* Name this external file gallery.css */
+body{
+    margin: 2%;
+    border: 1px solid black;
+    background-color: #b3b3b3;
+    text-align: center;
+}
+
+#image {
+    line-height: 650px;
+    width: 575px;
+    height: 650px;
+    border: 5px solid black;
+    margin: 0 auto;
+    background-color: #8e68ff;
+    background-image: url('');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 150%;
+    margin-bottom: 25px;
+}
+
+.preview {
+    width: 150px;
+    margin: 10px;
+    border: 5px solid black;
+    cursor: pointer;
+}
